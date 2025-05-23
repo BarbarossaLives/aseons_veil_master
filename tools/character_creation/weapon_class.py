@@ -18,3 +18,14 @@ class Weapon:
             "bulk": self.bulk,
             "qp": self.qp
         }
+        
+    @classmethod
+    def from_dict(cls, data: dict):
+        """Create a Weapon from a dictionary (like one loaded from JSON)."""
+        return cls(
+            name=data.get("name", ""),
+            tags=data.get("tags", []),
+            damage=data.get("damage", ""),
+            bulk=data.get("bulk", 0),
+            qp=data.get("qp", 0)
+        )
