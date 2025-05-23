@@ -1,0 +1,8 @@
+res://default_env.tres
+res://DiceRoller.tscn
+res://DiceRoller.tres
+res://Sources/default_env.tres
+res://Sources/DiceRoller.tres
+res://scenes/dice_roller.gd
+res://scenes/DiceRoller.tscn
+res://Sources/GUI_files/DiceRoller.tres

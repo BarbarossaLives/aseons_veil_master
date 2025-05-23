@@ -1,0 +1,238 @@
+[gd_scene load_steps=7 format=3 uid="uid://ekjja8dygmip"]
+
+[ext_resource type="Script" uid="uid://og8oos2ke1kk" path="res://scenes/dice_roller.gd" id="1_gi1l1"]
+[ext_resource type="Theme" uid="uid://bbm7h42ymm83g" path="res://Sources/GUI_files/DiceRoller.tres" id="2_isp21"]
+[ext_resource type="Texture2D" uid="uid://boqlp7gk60ji7" path="res://Sources/images/background_600.jpg" id="3_jxy3d"]
+[ext_resource type="FontFile" uid="uid://gjg1j71wujkd" path="res://Sources/fonts/Tektur-VariableFont_wdth,wght.ttf" id="4_a3c1d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vb0ui"]
+bg_color = Color(0.266207, 0.41462, 0.248769, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.152941, 0.184314, 0.211765, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0.207843, 0.509804, 0.654902, 1)
+shadow_size = 2
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4udqc"]
+font = ExtResource("4_a3c1d")
+font_size = 30
+
+[node name="Dice Roller - Phose One" type="Panel"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -400.0
+offset_right = 200.0
+offset_bottom = 400.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gi1l1")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(600, 600)
+layout_mode = 2
+offset_right = 600.0
+offset_bottom = 600.0
+theme = ExtResource("2_isp21")
+texture = ExtResource("3_jxy3d")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_top = 20.0
+offset_right = 600.0
+offset_bottom = 800.0
+theme = ExtResource("2_isp21")
+theme_override_constants/separation = 15
+
+[node name="Name of tool" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.892926, 0, 0.448266, 1)
+theme_override_font_sizes/font_size = 36
+text = "Dice Roller - Phase One"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Click to add dice" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.322268, 0.822542, 0.844112, 1)
+theme_override_fonts/font = ExtResource("4_a3c1d")
+theme_override_font_sizes/font_size = 20
+text = "Click on Dice type to add to pool"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="DiceButtonContainer" type="GridContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(500, 220)
+layout_mode = 2
+theme = ExtResource("2_isp21")
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 10
+columns = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/DiceButtonContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+
+[node name="D4Button" type="Button" parent="VBoxContainer/DiceButtonContainer/MarginContainer"]
+custom_minimum_size = Vector2(125, 100)
+layout_mode = 2
+theme = ExtResource("2_isp21")
+text = "D4"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/DiceButtonContainer"]
+layout_mode = 2
+
+[node name="D6Button" type="Button" parent="VBoxContainer/DiceButtonContainer/MarginContainer2"]
+custom_minimum_size = Vector2(125, 100)
+layout_mode = 2
+text = "D6"
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/DiceButtonContainer"]
+layout_mode = 2
+
+[node name="D8Button" type="Button" parent="VBoxContainer/DiceButtonContainer/MarginContainer3"]
+custom_minimum_size = Vector2(125, 100)
+layout_mode = 2
+text = "D8"
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/DiceButtonContainer"]
+layout_mode = 2
+
+[node name="D10Button" type="Button" parent="VBoxContainer/DiceButtonContainer/MarginContainer4"]
+custom_minimum_size = Vector2(125, 100)
+layout_mode = 2
+text = "D10"
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/DiceButtonContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+
+[node name="D12Button" type="Button" parent="VBoxContainer/DiceButtonContainer/MarginContainer5"]
+custom_minimum_size = Vector2(125, 100)
+layout_mode = 2
+text = "D12"
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/DiceButtonContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+
+[node name="D100Button" type="Button" parent="VBoxContainer/DiceButtonContainer/MarginContainer6"]
+custom_minimum_size = Vector2(125, 100)
+layout_mode = 2
+text = "D100"
+
+[node name="MarginContainer7" type="MarginContainer" parent="VBoxContainer/DiceButtonContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = -145
+
+[node name="D20Button" type="Button" parent="VBoxContainer/DiceButtonContainer/MarginContainer7"]
+custom_minimum_size = Vector2(125, 100)
+layout_mode = 2
+text = "D20
+"
+
+[node name="Add modifier" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme = ExtResource("2_isp21")
+theme_override_fonts/font = ExtResource("4_a3c1d")
+theme_override_font_sizes/font_size = 20
+text = "Click to change the modifier"
+horizontal_alignment = 1
+
+[node name="ModifierButtonContainer" type="GridContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(500, 60)
+layout_mode = 2
+theme = ExtResource("2_isp21")
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ModifierButtonContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+
+[node name="AddOneModifier" type="Button" parent="VBoxContainer/ModifierButtonContainer/MarginContainer"]
+custom_minimum_size = Vector2(275, 60)
+layout_mode = 2
+theme = ExtResource("2_isp21")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vb0ui")
+text = "+1"
+icon_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ModifierButtonContainer"]
+layout_mode = 2
+theme_override_constants/margin_right = 10
+
+[node name="misusOneModifier" type="Button" parent="VBoxContainer/ModifierButtonContainer/MarginContainer2"]
+custom_minimum_size = Vector2(275, 60)
+layout_mode = 2
+theme = ExtResource("2_isp21")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vb0ui")
+text = "+1"
+
+[node name="modifierLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_isp21")
+theme_override_font_sizes/font_size = 30
+text = "Total Modifier:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="dicePoolLabel" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme = ExtResource("2_isp21")
+theme_override_font_sizes/font_size = 32
+text = "Dice to Roll:"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="RollButtonMargin" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_isp21")
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 5
+
+[node name="rollButton" type="Button" parent="VBoxContainer/RollButtonMargin"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+text = "ROLL"
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_isp21")
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_bottom = 10
+
+[node name="DiceRolledLabel" type="Label" parent="VBoxContainer/MarginContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme = ExtResource("2_isp21")
+theme_override_font_sizes/font_size = 30
+text = "You Rolled:"
+label_settings = SubResource("LabelSettings_4udqc")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TotalLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_isp21")
+theme_override_font_sizes/font_size = 50
+text = "Total:"
+horizontal_alignment = 1

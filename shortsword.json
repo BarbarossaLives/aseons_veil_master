@@ -1,0 +1,10 @@
+{
+  "name": "Shortsword",
+  "tags": [
+    "Melee",
+    "Light"
+  ],
+  "damage": "1d6",
+  "bulk": 1,
+  "qp": 1
+}

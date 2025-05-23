@@ -1,0 +1,28 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://bbm7h42ymm83g"]
+
+[ext_resource type="FontFile" uid="uid://63ys2mon51xx" path="res://Sources/fonts/ShareTech-Regular.ttf" id="1_lv6ji"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n801m"]
+bg_color = Color(0.253825, 0.385162, 0.49814, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.118581, 0.118581, 0.118581, 1)
+border_blend = true
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0.216657, 0.531375, 0.683749, 0.94902)
+shadow_size = 2
+shadow_offset = Vector2(2, 2)
+
+[resource]
+Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+Button/constants/h_separation = 10
+Button/constants/outline_size = 2
+Button/font_sizes/font_size = 30
+Button/styles/normal = SubResource("StyleBoxFlat_n801m")
+Label/font_sizes/font_size = 16
+Label/fonts/font = ExtResource("1_lv6ji")
