@@ -26,6 +26,7 @@ class Feat:
     def from_dict(cls, data: dict):
         return cls(
             name=data.get("name", ""),
+            tags=data.get("tags", [])
             category=data.get("category", ""),
             fp_cost=data.get("fp_cost", 0),
             usage=data.get("usage", ""),
