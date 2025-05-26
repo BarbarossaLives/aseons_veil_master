@@ -1,0 +1,11 @@
+{
+  "name": "battle asxe",
+  "tags": [
+    "might",
+    "melee",
+    "two-handed"
+  ],
+  "damage": "1d8",
+  "bulk": 2,
+  "qp": 3
+}

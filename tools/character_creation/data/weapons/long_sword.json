@@ -1,0 +1,9 @@
+{
+  "name": "long_sword",
+  "tags": [
+    "melee.might"
+  ],
+  "damage": "1d8",
+  "bulk": 2,
+  "qp": 3
+}

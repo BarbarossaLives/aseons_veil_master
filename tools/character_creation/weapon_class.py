@@ -8,6 +8,8 @@ class Weapon:
     damage: str = "" # e.g. "2d6", "1d10"
     bulk: int = 0 #used to track carrying wieght
     qp: int = 0 #Quality Points (item durability pr value)
+    cost: int = 0
+    description: str = ""
     
     def to_dict(self):
         """Convert this wespon to a plain dictionary (for saving/export)"""
@@ -16,7 +18,9 @@ class Weapon:
             "tags": self.tags,
             "damage": self.damage,
             "bulk": self.bulk,
-            "qp": self.qp
+            "qp": self.qp,
+            "cosst":self.cost,
+            "description":self.cost
         }
         
     @classmethod
@@ -27,5 +31,7 @@ class Weapon:
             tags=data.get("tags", []),
             damage=data.get("damage", ""),
             bulk=data.get("bulk", 0),
-            qp=data.get("qp", 0)
+            qp=data.get("qp", 0),
+            cost=data.get("cost",0),
+            description=data.get("description", "")
         )
