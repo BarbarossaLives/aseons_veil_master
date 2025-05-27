@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(__file__)
 app = ttk.Window(
     title="Aeon's Veil Toolkit",
     themename="darkly",
-    size=(400, 400),
+    size=(600, 800),
     resizable=(False, False)
 )
 
@@ -38,15 +38,22 @@ def run_tool(script_name):
     full_path = os.path.abspath(os.path.join(BASE_DIR, script_name))
     subprocess.Popen(["python3", full_path])  
 
+# Ancestry Creator
+ttk.Button(app, text="Create Ancestry",command=lambda: run_tool("ancestry_creator.py"), style="success.TButton").pack(pady=10)
+
+# Background Creator
+ttk.Button(app,text="Background Creator", command=lambda:run_tool("background_creator.py"), style="success.TButton").pack(pady=10)
+
+
 # Weapon Creator
 ttk.Button(app, text="Create Weapon", command=lambda: run_tool("weapon_creator.py"), style="success.TButton").pack(pady=10)
 
 # Armor Creator
 ttk.Button(app, text="Create Armor",command=lambda: run_tool("armor_creator.py"), style="success.TButton").pack(pady=10)
 
+# Feat Creator
+ttk.Button(app, text="Create Feat",command=lambda: run_tool("feat_creator.py"), style="success.TButton").pack(pady=10)
 
-# Placeholder for Spell Creator
-ttk.Button(app, text="Create Spell (Coming Soon)", style="success.TButton").pack(pady=10)
 
 # Character Builder (in development)
 ttk.Button(app, text="Character Builder", command=lambda: run_tool("core/character_class.py"), style="success.TButton").pack(pady=10)

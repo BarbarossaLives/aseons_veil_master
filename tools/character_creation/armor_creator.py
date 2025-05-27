@@ -4,15 +4,23 @@ from tkinter import messagebox
 import os, json
 from armor_class import Armor
 
+
+#HelperFunction
+def parse_list_input(text: str) -> list:
+    return [item.strip() for item in text.split(",") if item.strip()]
+
+
 # Setup paths
 BASE_DIR = os.path.dirname(__file__)
 ARMOR_FOLDER = os.path.join(BASE_DIR, "data", "armor")
 os.makedirs(ARMOR_FOLDER, exist_ok=True)
 
+
+
 # Save function
 def save_armor():
     name = name_entry.get()
-    tags = [t.strip() for t in tags_entry.get().split(",") if t.strip()]
+    tags = parse_list_input(tags_entry.get())
     description = description_entry.get()
     try:
         ac_bonus = int(ac_entry.get())

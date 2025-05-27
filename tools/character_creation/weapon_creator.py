@@ -4,6 +4,11 @@ from tkinter import messagebox
 import os, json
 from weapon_class import Weapon
 
+#HeloerFunction
+def parse_list_input(text: str) -> list:
+    return [item.strip() for item in text.split(",") if item.strip()]
+
+
 # Setup paths
 BASE_DIR = os.path.dirname(__file__)
 WEAPON_FOLDER = os.path.join(BASE_DIR, "data", "weapons")
@@ -13,7 +18,7 @@ os.makedirs(WEAPON_FOLDER, exist_ok=True)
 
 def save_weapon():
     name = name_entry.get()
-    tags = [t.strip() for t in tags_entry.get().split(",") if t.strip()]
+    tags = parse_list_input(tags_entry.get())
     description = description_entry.get()
     damage = damage_entry.get()
     try:
@@ -29,28 +34,24 @@ def save_weapon():
         return
 
     weapon = Weapon(name=name, tags=tags, description=description, damage=damage, bulk=bulk, qp=qp, cost=cost)
+
     filename = f"{name.lower().replace(' ', '_')}.json"
     path = os.path.join(WEAPON_FOLDER, filename)
 
     with open(path, "w") as f:
         json.dump(weapon.to_dict(), f, indent=2)
 
-    if os.path.exists(path):
-        if not messagebox.askyesno("Overwrite?", f"A weapon named '{name}' already exists. Overwrite it?"):
-            return
+
 
 
     messagebox.showinfo("Saved", f"{weapon.name} saved to {filename}")
 
     # Clear fields for the next entry
-    name_entry.delete(0, 'end')
-    tags_entry.delete(0, 'end')
-    description_entry.delete(0, 'end')
-    damage_entry.delete(0, 'end')
-    bulk_entry.delete(0, 'end')
-    qp_entry.delete(0, 'end')
-    cost_entry.delete(0, 'end')
+    for entry in (name_entry,tags_entry,description_entry, damage_entry,bulk_entry,qp_entry,cost_entry):
+        entry.delete(0,"end")
+
     name_entry.focus()
+
 
 
 # Create window
@@ -72,7 +73,7 @@ justify = "center",
 anchor= "center"
 )
 
-ttk.Label(app, text="Weapon Creator", font=("Helvetica", 24)).pack(pady=10)
+ttk.Label(app, text="Weapon Creator", font=("Helvetica", 24, "bold")).pack(pady=10)
 
 # Name
 ttk.Label(app, text="Name:",style="info.Tlabel").pack()

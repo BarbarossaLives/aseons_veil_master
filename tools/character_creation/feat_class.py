@@ -10,28 +10,31 @@ class Feat:
     usage: str = ""  # "Permanent", "1 FP", "3 FP", "Special", etc.
     effect: str = ""  # Short description of what it does
     requirements: str = "" # XP or skill pip requirements (optional)
+    description: str = ""
     
     def to_dict(self): # export to dictionary
         return{
             "name": self.name,
             "tags": self.tags,
-            "catagory": self.catagory,
-            "fp_cost": self.rp_cost,
+            "catagory": self.category,
+            "fp_cost": self.fp_cost,
             "usage": self.usage,
-            "effect": self.effects,
-            "requirements": self.requirements
+            "effect": self.effect,
+            "requirements": self.requirements,
+            "description" : self.description
         }
         
     @classmethod
     def from_dict(cls, data: dict):
         return cls(
             name=data.get("name", ""),
-            tags=data.get("tags", [])
-            category=data.get("category", ""),
+            tags=data.get("tags", []),
+            catagory=data.get("category", ""),
             fp_cost=data.get("fp_cost", 0),
             usage=data.get("usage", ""),
             effect=data.get("effect", ""),
-            requirements=data.get("requirements", "")
+            requirements=data.get("requirements", ""),
+            description=data.get("description", "")
         )
 
     

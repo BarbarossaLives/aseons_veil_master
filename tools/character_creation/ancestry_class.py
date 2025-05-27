@@ -26,7 +26,7 @@ class Ancestry:
         return cls(
             name=data.get("name", ""),
             size=data.get("size", ""),
-            traits=data.get("traits", "" )
-            bonuses=data.get("bonuses", [])
-            description= data,get("description", "")
+            traits=data.get("traits", "" ),
+            bonuses=data.get("bonuses", []),
+            description= data.get("description", "")
         )
