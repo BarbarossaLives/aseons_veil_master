@@ -1,10 +1,10 @@
-Label
 MarginContainer
 Button
+TextureRect
+VBoxContainer
+Label
 GridContainer
 GridMap
 TextureButton
-TextureRect
-VBoxContainer
 Panel
 Control

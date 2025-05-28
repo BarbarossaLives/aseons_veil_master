@@ -1,0 +1,16 @@
+{
+  "name": "Village Guard",
+  "description": "A blade, a badge, and a sharp eye \u2014 that's your job.",
+  "starting_skills": [
+    "Melee",
+    "Vigilance"
+  ],
+  "starting_gear": [
+    "Spear",
+    "worn leathers",
+    "whistle",
+    "round shield",
+    "iron cap"
+  ],
+  "wealth_modifier": 1
+}

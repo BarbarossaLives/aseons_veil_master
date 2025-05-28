@@ -1,0 +1,16 @@
+{
+  "name": "Market Runner",
+  "description": "Fast feet and fast hands \u2014 you delivered goods and messages across the village.",
+  "starting_skills": [
+    "Acrobatics",
+    "Deception"
+  ],
+  "starting_gear": [
+    "Satchel",
+    "forged pass",
+    "coin stub",
+    "dagger",
+    "padded vest"
+  ],
+  "wealth_modifier": 1
+}

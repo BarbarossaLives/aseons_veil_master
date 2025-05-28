@@ -1,0 +1,16 @@
+{
+  "name": "Dustborn",
+  "description": "You were born inside the ruins themselves. You dream in circuits.",
+  "starting_skills": [
+    "Lore",
+    "Mechanics"
+  ],
+  "starting_gear": [
+    "Alien token",
+    "cracked data lens",
+    "fingerless gloves",
+    "light coil-blade",
+    "inscribed scrap-plate"
+  ],
+  "wealth_modifier": -2
+}

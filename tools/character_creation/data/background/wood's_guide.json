@@ -1,0 +1,16 @@
+{
+  "name": "Wood's Guide",
+  "description": "You know the wild paths and whispering trees better than any map.",
+  "starting_skills": [
+    "Survival",
+    "Tracking"
+  ],
+  "starting_gear": [
+    "Compass",
+    "bone-handled knife",
+    "small pelt bundle",
+    "leather bracers",
+    "snare kit"
+  ],
+  "wealth_modifier": 0
+}

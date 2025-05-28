@@ -1,0 +1,15 @@
+{
+  "name": "Tiekrin",
+  "size": "Medium",
+  "traits": [
+    "Volatile Spark",
+    "Infravision",
+    "Fearsome Visage",
+    "Surge Resistance"
+  ],
+  "bonuses": {
+    "Might": 1,
+    "Agility": 1,
+    "Instinct": -1
+  }
+}

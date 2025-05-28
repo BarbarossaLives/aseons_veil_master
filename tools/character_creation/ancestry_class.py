@@ -8,7 +8,7 @@ class Ancestry:
     size: str  #size of the character 
     traits: List[str] 
     bonuses: Dict[str,int]
-    description: str
+    
 
 
     def to_dict(self):
@@ -16,8 +16,7 @@ class Ancestry:
             "name": self.name,
             "size": self.size,
             "traits": self.traits,
-            "bonuses": self.bonuses,
-            "description": self.description,
+            "bonuses": self.bonuses
         }
     
 
@@ -27,6 +26,5 @@ class Ancestry:
             name=data.get("name", ""),
             size=data.get("size", ""),
             traits=data.get("traits", "" ),
-            bonuses=data.get("bonuses", []),
-            description= data.get("description", "")
+            bonuses=data.get("bonuses", [])
         )

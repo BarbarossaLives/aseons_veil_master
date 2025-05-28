@@ -44,6 +44,8 @@ ttk.Button(app, text="Create Ancestry",command=lambda: run_tool("ancestry_creato
 # Background Creator
 ttk.Button(app,text="Background Creator", command=lambda:run_tool("background_creator.py"), style="success.TButton").pack(pady=10)
 
+# Feat Creator
+ttk.Button(app, text="Create Feat",command=lambda: run_tool("feat_creator.py"), style="success.TButton").pack(pady=10)
 
 # Weapon Creator
 ttk.Button(app, text="Create Weapon", command=lambda: run_tool("weapon_creator.py"), style="success.TButton").pack(pady=10)
@@ -51,8 +53,17 @@ ttk.Button(app, text="Create Weapon", command=lambda: run_tool("weapon_creator.p
 # Armor Creator
 ttk.Button(app, text="Create Armor",command=lambda: run_tool("armor_creator.py"), style="success.TButton").pack(pady=10)
 
-# Feat Creator
-ttk.Button(app, text="Create Feat",command=lambda: run_tool("feat_creator.py"), style="success.TButton").pack(pady=10)
+#Gear Creator
+ttk.Button(app, text="Gear Creator", command=lambda:run_tool("gear_creator.py"), style="success.TButton").pack(pady=10)
+
+#Potion Creator
+ttk.Button(app, text="Potion Creator", command=lambda:run_tool("potion_creator.py"), style="success.TButton").pack(pady=10)
+
+# Focus Items
+ttk.Button(app, text = "Focus_Item",command=lambda:run_tool("focus_item_creator", style="success.TBuuton").pack(pady=10)
+
+#s Starting Kits
+ttk.Button(app, text = "Startinig kits", command=lambda:run_tool("starting_kit_creator"), style="success.TButton").pack(pady=10)
 
 
 # Character Builder (in development)

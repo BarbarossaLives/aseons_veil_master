@@ -1,0 +1,15 @@
+{
+  "name": "Elvari",
+  "size": "Medium",
+  "traits": [
+    "Infravision",
+    "Long Memory",
+    "Biological Precision",
+    "Resonant Thought"
+  ],
+  "bonuses": {
+    "Wit": 1,
+    "Instinct": 1,
+    "Might": -1
+  }
+}

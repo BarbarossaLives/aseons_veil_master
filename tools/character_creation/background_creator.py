@@ -21,7 +21,7 @@ def save_background():
     description = description_entry.get()
     starting_skills = parse_list_input (starting_skills_entry.get())
     starting_gear = parse_list_input(starting_gear_entry.get())
-    wealth_modifier = int(wealth_modifier.get())
+    wealth_modifier = int(wealth_modifier_entry.get())
 
     if not name:
         messagebox.showerror("Missing Name", "Please enter a name for the armor.")
@@ -46,7 +46,7 @@ def save_background():
     messagebox.showinfo("Saved", f"{background.name} saved to {filename}")
                         
     #clear feilds
-    for entry in (name,description,starting_skills,starting_gear,wealth_modifier):
+    for entry in (name_entry,description_entry,starting_skills_entry,starting_gear_entry,wealth_modifier_entry):
         entry.delete(0,'end')
     name_entry.focus()
 

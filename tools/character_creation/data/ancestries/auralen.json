@@ -1,0 +1,15 @@
+{
+  "name": "Auralen",
+  "size": "Medium",
+  "traits": [
+    "Volatile Spark",
+    "Infravision",
+    "Fearsome Visage",
+    "Surge Resistance"
+  ],
+  "bonuses": {
+    "Instinct": 1,
+    "Wit": 1,
+    "Might": -1
+  }
+}

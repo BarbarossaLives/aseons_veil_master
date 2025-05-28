@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjfof23tidepn"]
+
+[ext_resource type="Texture2D" uid="uid://1w7xvaqy2bil" path="res://Sources/images/sl_0210121_40570_43.jpg" id="1_exq0p"]
+[ext_resource type="PackedScene" uid="uid://ekjja8dygmip" path="res://scenes/DiceRoller.tscn" id="2_17rhf"]
+[ext_resource type="PackedScene" uid="uid://bx8qee3jenixy" path="res://scenes/main_creation.tscn" id="3_qsmph"]
+
+[node name="FullScreen" type="Node2D"]
+metadata/_edit_vertical_guides_ = [-173.0]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 7001.0
+offset_bottom = 4001.0
+scale = Vector2(0.27, 0.27)
+texture = ExtResource("1_exq0p")
+
+[node name="Dice Roller - Phose One" parent="." instance=ExtResource("2_17rhf")]
+offset_left = 1239.0
+offset_top = 136.0
+offset_right = 1839.0
+offset_bottom = 936.0
+
+[node name="Main Creation" parent="." instance=ExtResource("3_qsmph")]
+position = Vector2(-1, 1)

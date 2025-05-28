@@ -1,0 +1,15 @@
+{
+  "name": "Orrukal",
+  "size": "Medium",
+  "traits": [
+    "Environmental Intuition",
+    "Adapted Physiology",
+    "Agrarian Efficiency",
+    "Earthen Endurance"
+  ],
+  "bonuses": {
+    "Might": 1,
+    "Instinct": 1,
+    "Agility": -1
+  }
+}

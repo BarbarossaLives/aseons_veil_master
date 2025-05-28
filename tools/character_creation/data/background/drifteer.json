@@ -1,0 +1,17 @@
+{
+  "name": "Drifteer",
+  "description": "You don\u2019t stay long anywhere, but you always leave with stories.",
+  "starting_skills": [
+    "anywhere",
+    "but you always leave with stories.\tBluff",
+    "Insight"
+  ],
+  "starting_gear": [
+    "Travel cloak",
+    "dice set",
+    "hidden coin pouch",
+    "light sling",
+    "sewing needle kit"
+  ],
+  "wealth_modifier": 0
+}

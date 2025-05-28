@@ -34,7 +34,7 @@ def save_ancestry():
     size = size_entry.get()
     traits = parse_list_input(traits_entry.get())
     bonuses = parse_bonus_input(bonuses_entry.get())
-    description = description_entry.get()
+    
 
     if not name:
         messagebox.showerror("Missing Name", "Please enter a name for the ancestry.")
@@ -46,7 +46,7 @@ def save_ancestry():
         size=size,
         traits=traits,
         bonuses=bonuses,
-        description=description
+    
     )
 
     filename = f"{name.lower().replace(' ', '_')}.json"
@@ -58,14 +58,26 @@ def save_ancestry():
     messagebox.showinfo("Saved", f"{ancestry.name} saved to {filename}")
 
     # Clear fields
-    for entry in (name_entry, size_entry, traits_entry, bonuses_entry, description_entry):
+    for entry in (name_entry, size_entry, traits_entry, bonuses_entry):
         entry.delete(0, 'end')
 
     name_entry.focus()
 
 # --- GUI Window ---
 
-app = ttk.Window(title="Ancestry Creator", themename="darkly", size=(600, 700))
+app = ttk.Window(title="Ancestry Creator", themename="darkly")
+
+screen_width = app.winfo_screenwidth()
+screen_height = app.winfo_screenheight()
+print(screen_height)
+print(screen_width)
+width = 600
+height = 700
+x = (screen_width // 2) - (width // 2)
+y = (screen_height // 2) - (height // 2)
+
+app.geometry(f"{width}x{height}+{x}+{y}")
+
 
 style = ttk.Style()
 style.configure(
@@ -105,10 +117,7 @@ ttk.Label(app, text="Bonuses (e.g., Might:1, Agility:2):",style="info.Tlabel").p
 bonuses_entry = ttk.Entry(app)
 bonuses_entry.pack(pady=5)
 
-# Description
-ttk.Label(app, text="Description:",style="info.Tlabel").pack()
-description_entry = ttk.Entry(app)
-description_entry.pack(pady=5)
+
 
 # Save Button
 ttk.Button(app, text="Save Ancestry", command=save_ancestry, style="success").pack(pady=15)

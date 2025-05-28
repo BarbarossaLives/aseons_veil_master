@@ -3,11 +3,11 @@ from typing import List
 
 @dataclass
 class Armor:
-    name: str = "",
-    tags: List[str] = None,
+    name: str = ""
+    tags: List[str] = None
     description: str = ""
-    ac_bonus: int = 0,
-    bulk: int = 0,
+    ac_bonus: int = 0
+    bulk: int = 0
     qp: int = 0
     cost: int  = 0
     

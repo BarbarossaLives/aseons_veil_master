@@ -1,0 +1,14 @@
+{
+  "name": "Firvolg",
+  "size": "Large",
+  "traits": [
+    "Natural Harmony",
+    "Living Earth Link",
+    "Natural Heavy Armor",
+    "Terran Memory"
+  ],
+  "bonuses": {
+    "Might": 2,
+    "Agility": -1
+  }
+}

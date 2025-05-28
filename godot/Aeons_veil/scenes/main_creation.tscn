@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx8qee3jenixy"]
+
+[ext_resource type="Texture2D" uid="uid://boqlp7gk60ji7" path="res://Sources/images/background_600.jpg" id="1_5p628"]
+[ext_resource type="Theme" uid="uid://bbm7h42ymm83g" path="res://Sources/GUI_files/DiceRoller.tres" id="2_xq347"]
+
+[node name="Main Creation" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(300, 1080)
+offset_right = 600.0
+offset_bottom = 1080.0
+scale = Vector2(0.5, 1)
+texture = ExtResource("1_5p628")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 300.0
+offset_bottom = 1080.0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_xq347")
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Ancestry" type="Button" parent="VBoxContainer/MarginContainer"]
+custom_minimum_size = Vector2(125, 60)
+layout_mode = 2
+theme = ExtResource("2_xq347")
+text = "Ancestry Creator
+"

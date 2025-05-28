@@ -1,0 +1,16 @@
+{
+  "name": "Feral Survivor",
+  "description": "Raised outside the towns, you're strong, quiet, and unafraid of the dark.",
+  "starting_skills": [
+    "Athletics",
+    "Survival"
+  ],
+  "starting_gear": [
+    "v\tCrude weapon",
+    "scavenged cloak",
+    "fire-starter",
+    "bone armor scraps",
+    "gut cord rope (20ft)"
+  ],
+  "wealth_modifier": -1
+}

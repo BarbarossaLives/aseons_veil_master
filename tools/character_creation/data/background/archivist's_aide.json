@@ -1,0 +1,16 @@
+{
+  "name": "Archivist's Aide",
+  "description": "You once sorted old maps and books in a dusty, candlelit hall.",
+  "starting_skills": [
+    "ore",
+    "Insight"
+  ],
+  "starting_gear": [
+    "Tattered journal",
+    "wax pencil",
+    "faded parchment",
+    "reading lens",
+    "etched bone stylus"
+  ],
+  "wealth_modifier": -1
+}

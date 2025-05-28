@@ -1,0 +1,14 @@
+{
+  "name": "gathari",
+  "size": "Medium",
+  "traits": [
+    "Stoneblood Resilience",
+    "Enduring Laborer",
+    "Hearty Build",
+    "Tunnel Instinct"
+  ],
+  "bonuses": {
+    "Might": 2,
+    "Wit": -1
+  }
+}

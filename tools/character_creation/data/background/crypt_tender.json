@@ -1,0 +1,16 @@
+{
+  "name": "Crypt Tender",
+  "description": "You maintained a shrine built atop ancient ruins \u2014 and heard the machines stir.",
+  "starting_skills": [
+    "Vigilance",
+    "Lore"
+  ],
+  "starting_gear": [
+    "Candle set",
+    "chisel",
+    "rusted key",
+    "ritual censer",
+    "simple robes (padded)"
+  ],
+  "wealth_modifier": 0
+}

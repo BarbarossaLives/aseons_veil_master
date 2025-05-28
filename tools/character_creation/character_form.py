@@ -1,41 +1,48 @@
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
-from tkinter import messagebox
+import os
 
-# Create the main app window
+# Create the main window
 app = ttk.Window(
-    title="Embark Character Builder",
-    themename="darkly",  # You can try "solar", "cyborg", "flatly", etc.
+    title="Embark Character Creator",
+    themename="darkly",
     size=(600, 500),
     resizable=(False, False)
 )
 
-# Header Label
-ttk.Label(app, text="Create New Character", font=("Arial", 20)).pack(pady=20)
+# Title
+ttk.Label(app, text="Embark Character Creator", font=("Helvetica", 24, "bold")).pack(pady=10)
 
-# Name input
-name_label = ttk.Label(app, text="Name:")
-name_label.pack()
-name_entry = ttk.Entry(app)
-name_entry.pack(pady=5)
+# Create Notebook
+notebook = ttk.Notebook(app)
+notebook.pack(fill='both', expand=True, padx=10, pady=10)
 
-# Ancestry input
-ancestry_label = ttk.Label(app, text="Ancestry:")
-ancestry_label.pack()
-ancestry_entry = ttk.Entry(app)
-ancestry_entry.pack(pady=5)
+# --- TAB 1: General Info ---
+tab_general = ttk.Frame(notebook)
+notebook.add(tab_general, text="General Info")
 
-# Size input
-size_label = ttk.Label(app, text="Size:")
-size_label.pack()
-size_entry = ttk.Entry(app)
-size_entry.pack(pady=5)
+# Name
+ttk.Label(tab_general, text="Character Name:").grid(row=0, column=0, sticky="w", padx=10, pady=5)
+name_entry = ttk.Entry(tab_general)
+name_entry.grid(row=0, column=1, sticky="ew", padx=10)
 
-# Background input
-background_label = ttk.Label(app, text="Background:")
-background_label.pack()
-background_entry = ttk.Entry(app)
-background_entry.pack(pady=5)
+# Ancestry
+ttk.Label(tab_general, text="Ancestry:").grid(row=1, column=0, sticky="w", padx=10, pady=5)
+ancestry_combobox = ttk.Combobox(tab_general, values=["Human", "Elf", "Orc", "Dwarf"])
+ancestry_combobox.grid(row=1, column=1, sticky="ew", padx=10)
+
+# Size
+ttk.Label(tab_general, text="Size:").grid(row=2, column=0, sticky="w", padx=10, pady=5)
+size_combobox = ttk.Combobox(tab_general, values=["Small", "Medium", "Large"])
+size_combobox.grid(row=2, column=1, sticky="ew", padx=10)
+
+# Background
+ttk.Label(tab_general, text="Background:").grid(row=3, column=0, sticky="w", padx=10, pady=5)
+background_combobox = ttk.Combobox(tab_general, values=["Innkeeper", "Soldier", "Scholar"])
+background_combobox.grid(row=3, column=1, sticky="ew", padx=10)
+
+# Make sure the columns resize nicely
+tab_general.columnconfigure(1, weight=1)
 
 # Launch the GUI
 app.mainloop()

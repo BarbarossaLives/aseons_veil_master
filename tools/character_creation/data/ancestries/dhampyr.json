@@ -1,0 +1,15 @@
+{
+  "name": "Dhampyr",
+  "size": "Medium",
+  "traits": [
+    "Resilient Constitution",
+    "Night Adapted",
+    "Charismatic Presence",
+    "Partial Regeneration"
+  ],
+  "bonuses": {
+    "Instinct": 1,
+    "Might": 1,
+    "Wit": -1
+  }
+}

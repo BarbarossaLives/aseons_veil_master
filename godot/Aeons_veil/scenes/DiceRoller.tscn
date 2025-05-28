@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ekjja8dygmip"]
 
-[ext_resource type="Script" uid="uid://og8oos2ke1kk" path="res://scenes/dice_roller.gd" id="1_gi1l1"]
+[ext_resource type="Script" uid="uid://og8oos2ke1kk" path="res://scripts/dice_roller.gd" id="1_gi1l1"]
 [ext_resource type="Theme" uid="uid://bbm7h42ymm83g" path="res://Sources/GUI_files/DiceRoller.tres" id="2_isp21"]
 [ext_resource type="Texture2D" uid="uid://boqlp7gk60ji7" path="res://Sources/images/background_600.jpg" id="3_jxy3d"]
 [ext_resource type="FontFile" uid="uid://gjg1j71wujkd" path="res://Sources/fonts/Tektur-VariableFont_wdth,wght.ttf" id="4_a3c1d"]
@@ -39,10 +39,10 @@ grow_vertical = 2
 script = ExtResource("1_gi1l1")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(600, 600)
+custom_minimum_size = Vector2(600, 800)
 layout_mode = 2
 offset_right = 600.0
-offset_bottom = 600.0
+offset_bottom = 800.0
 theme = ExtResource("2_isp21")
 texture = ExtResource("3_jxy3d")
 
@@ -72,7 +72,7 @@ horizontal_alignment = 1
 vertical_alignment = 2
 
 [node name="DiceButtonContainer" type="GridContainer" parent="VBoxContainer"]
-custom_minimum_size = Vector2(500, 220)
+custom_minimum_size = Vector2(600, 220)
 layout_mode = 2
 theme = ExtResource("2_isp21")
 theme_override_constants/h_separation = 20

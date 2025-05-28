@@ -1,0 +1,16 @@
+{
+  "name": "Ruins Scavenger",
+  "description": "You\u2019ve spent your life crawling through dead machines and broken halls.",
+  "starting_skills": [
+    "echanics",
+    "Stealth"
+  ],
+  "starting_gear": [
+    "usted tools",
+    "crowbar",
+    "salvaged scrap",
+    "light harness",
+    "coil-handled knife"
+  ],
+  "wealth_modifier": 0
+}

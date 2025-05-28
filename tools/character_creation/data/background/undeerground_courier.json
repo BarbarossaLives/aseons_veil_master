@@ -1,0 +1,16 @@
+{
+  "name": "Undeerground Courier",
+  "description": "You delivered secrets, sometimes through walls.",
+  "starting_skills": [
+    "Stealth",
+    "Acrobatics"
+  ],
+  "starting_gear": [
+    "Bandage roll",
+    "herbal kit",
+    "copper talisman",
+    "salve-stone",
+    "boiled leather apron"
+  ],
+  "wealth_modifier": 0
+}

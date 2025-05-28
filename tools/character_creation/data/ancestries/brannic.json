@@ -1,0 +1,15 @@
+{
+  "name": "Brannic",
+  "size": "Small",
+  "traits": [
+    "Innate Tinkerer",
+    "Small Frame",
+    "Machine Whisperer",
+    "Quick Fix"
+  ],
+  "bonuses": {
+    "Wit": 1,
+    "Agility": 1,
+    "Might": -1
+  }
+}
