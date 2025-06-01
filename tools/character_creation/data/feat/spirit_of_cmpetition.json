@@ -1,0 +1,8 @@
+{
+  "name": "Spirit of Cmpetition",
+  "catagory": "Athletics",
+  "fp_cost": "0",
+  "usage": "Permanent",
+  "effect": "If you physically defeat an opponent in\na race, duel, or competition, gain 1 XP\nin Athletics. While gaining 2 XP if you\ntriumph while outnumbered.",
+  "pip": "2"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Fists of Futry",
+  "catagory": "athletics",
+  "fp_cost": "0",
+  "usage": "oermanent",
+  "effect": "Once per round, after a successful\nunarmed attack you may attack again,\ngrapple, or disarm. Repeat after each\nsuccess, up to Athletics times.",
+  "pip": "2"
+}

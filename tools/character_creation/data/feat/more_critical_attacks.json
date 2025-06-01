@@ -1,0 +1,8 @@
+{
+  "name": "More Critical Attacks",
+  "catagory": "Athletics",
+  "fp_cost": "",
+  "usage": "Permanent",
+  "effect": "Attack rolls of 19-20 are considered\ncritical successes for attack rolls.",
+  "pip": "4"
+}

@@ -16,7 +16,7 @@ texture = ExtResource("1_5p628")
 offset_right = 300.0
 offset_bottom = 1080.0
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+[node name="MarginAncestry" type="MarginContainer" parent="VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_xq347")
 theme_override_constants/margin_left = 20
@@ -24,9 +24,114 @@ theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="Ancestry" type="Button" parent="VBoxContainer/MarginContainer"]
+[node name="Ancestry" type="Button" parent="VBoxContainer/MarginAncestry"]
 custom_minimum_size = Vector2(125, 60)
 layout_mode = 2
 theme = ExtResource("2_xq347")
-text = "Ancestry Creator
+text = "Ancestry
+"
+
+[node name="MarginBackground" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_xq347")
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Background" type="Button" parent="VBoxContainer/MarginBackground"]
+custom_minimum_size = Vector2(125, 60)
+layout_mode = 2
+theme = ExtResource("2_xq347")
+text = "Background
+"
+
+[node name="MarginFeat" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_xq347")
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Feat" type="Button" parent="VBoxContainer/MarginFeat"]
+custom_minimum_size = Vector2(125, 60)
+layout_mode = 2
+theme = ExtResource("2_xq347")
+text = "Feat
+"
+
+[node name="MarginWeapon" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_xq347")
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Weapon" type="Button" parent="VBoxContainer/MarginWeapon"]
+custom_minimum_size = Vector2(125, 60)
+layout_mode = 2
+theme = ExtResource("2_xq347")
+text = "Weapon
+"
+
+[node name="MarginSpell" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_xq347")
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Spell" type="Button" parent="VBoxContainer/MarginSpell"]
+custom_minimum_size = Vector2(125, 60)
+layout_mode = 2
+theme = ExtResource("2_xq347")
+text = "Spell
+"
+
+[node name="MarginGear" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_xq347")
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Gear" type="Button" parent="VBoxContainer/MarginGear"]
+custom_minimum_size = Vector2(125, 60)
+layout_mode = 2
+theme = ExtResource("2_xq347")
+text = "Gear
+"
+
+[node name="MarginPotion" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_xq347")
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Potion" type="Button" parent="VBoxContainer/MarginPotion"]
+custom_minimum_size = Vector2(125, 60)
+layout_mode = 2
+theme = ExtResource("2_xq347")
+text = "Potion
+"
+
+[node name="marginFocusItem" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_xq347")
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Focus Item" type="Button" parent="VBoxContainer/marginFocusItem"]
+custom_minimum_size = Vector2(125, 60)
+layout_mode = 2
+theme = ExtResource("2_xq347")
+text = "Focus Items
 "

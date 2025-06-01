@@ -1,0 +1,8 @@
+{
+  "name": "Pack Mule",
+  "catagory": "Athletics",
+  "fp_cost": "0",
+  "usage": "permanent",
+  "effect": "Add your Athletics to your CC.",
+  "pip": "1"
+}

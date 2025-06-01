@@ -1,0 +1,8 @@
+{
+  "name": "Adept Athlete",
+  "catagory": "Athletics",
+  "fp_cost": "0",
+  "usage": "permanent",
+  "effect": "You can climb and swim at your natural\nspeed and hold your breath for twice as\nlong as before you took this feat.",
+  "pip": "1"
+}

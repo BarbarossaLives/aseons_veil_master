@@ -1,0 +1,8 @@
+{
+  "name": "Internal Compass",
+  "catagory": "Awareness",
+  "fp_cost": "",
+  "usage": "permanent",
+  "effect": "You always know which way you are\nfacing in relation to true north unless the\ncardinal directions are magically obscured.",
+  "pip": "1"
+}

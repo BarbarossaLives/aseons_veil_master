@@ -1,0 +1,8 @@
+{
+  "name": "Propel",
+  "catagory": "Athletics",
+  "fp_cost": "3",
+  "usage": "",
+  "effect": "For Athletics rounds, you can run along\na wall for your full movement and up\nwalls to half your movement. Or jump\nhalf your movement horizontally or\nvertically.\nAdditionally, you may prevent all damage\nfrom falling a nearby distance.",
+  "pip": "3"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Pile Driver",
+  "catagory": "Athletics",
+  "fp_cost": "1",
+  "usage": "",
+  "effect": "After grappling an opponent, you may\nmake an attack roll as a bonus action to\ndetermine if you twirl, throw, or slam\nthem for Might d6 damage.",
+  "pip": "3"
+}

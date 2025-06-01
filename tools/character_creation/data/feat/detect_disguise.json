@@ -1,0 +1,8 @@
+{
+  "name": "Detect Disguise",
+  "catagory": "Awareness",
+  "fp_cost": "2",
+  "usage": "",
+  "effect": "You are able to see through any non-\nmagical disguise. Roll with advan-\ntage when attempting to see through a\nmagical disguise or shapeshifter's form.",
+  "pip": "1"
+}

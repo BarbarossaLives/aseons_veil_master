@@ -1,0 +1,8 @@
+{
+  "name": "Predict Weather",
+  "catagory": "Awareness",
+  "fp_cost": "1",
+  "usage": "",
+  "effect": "You gain accurate knowledge of the\nweather within Nature miles, with an\nhour advance forecast per Awareness.",
+  "pip": "1"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Rush",
+  "catagory": "Athletics",
+  "fp_cost": "1",
+  "usage": "",
+  "effect": "Move your full speed, then gain +4 to\ngrapple, shove, or melee attack. Yet\nsuffer -2 AC until your next turn.\nAt Athletics \u2022\u2022\u2022, do not take an AC penalty.",
+  "pip": "2"
+}

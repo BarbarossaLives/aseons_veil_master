@@ -1,6 +1,7 @@
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
 from tkinter import messagebox
+import os, json
 from feat_class import Feat
 
 #Helper Function
@@ -10,19 +11,17 @@ def parse_list_input(text: str) -> list:
 # set paths
 BASE_DIR = os.path.dirname(__file__)
 FEAT_FOLDER = os.path.join(BASE_DIR,"data","feat")
-os.markedirs(FEAT_FOLDER, exist_ok=True)
+os.makedirs(FEAT_FOLDER, exist_ok=True)
 
 #save function
 
 def save_feat():
     name = name_entry.get()
-    tags = parse_list_input(tags_entry.get())
-    description = description_entry.get()
-    catagory = catagory_entry.get()
+    category = category_entry.get()
     fp_cost = fp_cost_entry.get()
     usage = usage_entry.get()
     effect = effect_entry.get()
-    requirements = requirements_entry.get()
+    pip = pip_entry.get()
 
     if not name:
         messagebox.showerror("Missing Name", "Please enter a name for the armor.")
@@ -30,13 +29,11 @@ def save_feat():
     
     feat = Feat(
         name=name,
-        tags=tags,
-        description=description,
-        catagory=catagory,
+        category=category,
         fp_cost=fp_cost,
         usage=usage,
         effect=effect,
-        requirements=requirements
+        pip=pip
     )
 
     filename= f"{name.lower().replace(' ','_')}.json"
@@ -49,10 +46,10 @@ def save_feat():
 
 
     #clear fields for the next entry
-    for entry in (name_entry,tags_entry,catagory_entry,description_entry,fp_cost_entry,usage_entry,effect_entry,requirements_entry):
+    for entry in (name_entry,category_entry,fp_cost_entry,usage_entry,effect_entry,pip_entry):
         entry.delete(0,"end")
 
-    name_entry.focus()
+    name_entry.focus
 
 
 # create window
@@ -78,13 +75,10 @@ ttk.Label(app, text="Name", style = "info.TLabel").pack()
 name_entry = ttk.Entry(app)
 name_entry.pack(pady=5)
 
-ttk.Label(app, text="Tags", style = "info.TLabel").pack()
-tags_entry = ttk.Entry(app)
-tags_entry.pack(pady=5)
 
-ttk.Label(app, text="Catagory", style = "info.TLabel").pack()
-catagory_entry = ttk.Entry(app)
-catagory_entry.pack(pady=5)
+ttk.Label(app, text="Category", style = "info.TLabel").pack()
+category_entry = ttk.Entry(app)
+category_entry.pack(pady=5)
 
 ttk.Label(app, text="FP Cost", style = "info.TLabel").pack()
 fp_cost_entry = ttk.Entry(app)
@@ -98,10 +92,12 @@ ttk.Label(app, text="Effect", style = "info.TLabel").pack()
 effect_entry = ttk.Entry(app)
 effect_entry.pack(pady=5)
 
-ttk.Label(app, text="Requirements", style = "info.TLabel").pack()
-requirements_entry = ttk.Entry(app)
-requirements_entry.pack(pady=5)
 
-ttk.Label(app, text="Description", style = "info.TLabel").pack()
-description_entry = ttk.Entry(app)
-description_entry.pack(pady=5)
+ttk.Label(app, text="Pip", style = "info.TLabel").pack()
+pip_entry = ttk.Entry(app)
+pip_entry.pack(pady=5)
+
+# Save Button
+ttk.Button(app, text="Save Feat", command=save_feat, style="success").pack(pady=15)
+
+app.mainloop()

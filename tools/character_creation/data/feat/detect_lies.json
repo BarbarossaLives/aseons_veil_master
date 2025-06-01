@@ -1,0 +1,8 @@
+{
+  "name": "Detect Lies",
+  "catagory": "Awareness",
+  "fp_cost": "1",
+  "usage": "",
+  "effect": "Lies and expressed or performed decep-\ntions can be revealed for what they truly\nare by rolling:",
+  "pip": "1"
+}

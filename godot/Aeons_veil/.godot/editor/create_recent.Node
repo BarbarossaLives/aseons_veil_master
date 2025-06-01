@@ -1,10 +1,12 @@
 MarginContainer
-Button
-TextureRect
-VBoxContainer
 Label
+LineEdit
+VBoxContainer
+TextureRect
+NinePatchRect
+Button
+TextureButton
 GridContainer
 GridMap
-TextureButton
 Panel
 Control
