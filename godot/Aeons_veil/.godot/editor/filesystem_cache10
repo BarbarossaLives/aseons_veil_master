@@ -1,15 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1748654843
+::res://::1748963441
 export_presets.cfg::TextFile/TextFile::-1::1748367574::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::3998505068496415198::1747698022::1747767678::1::::<><><>0<>0<>7e0c56a105ba5bc124b8b70f8a7bd8de<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 ::res://scenes/::1748565240
-DiceRoller.tscn::PackedScene::301961728319943583::1748565240::0::1::::<><><>0<>0<><>::uid://og8oos2ke1kk::::res://scripts/dice_roller.gd<>uid://bbm7h42ymm83g::::res://Sources/GUI_files/DiceRoller.tres<>uid://boqlp7gk60ji7::::res://Sources/images/background_600.jpg<>uid://gjg1j71wujkd::::res://Sources/fonts/Tektur-VariableFont_wdth,wght.ttf
+DiceRoller.tscn::PackedScene/PackedScene::301961728319943583::1748565240::0::1::::<><><>0<>0<><>::uid://og8oos2ke1kk::::res://scripts/dice_roller.gd<>uid://bbm7h42ymm83g::::res://Sources/GUI_files/DiceRoller.tres<>uid://boqlp7gk60ji7::::res://Sources/images/background_600.jpg<>uid://gjg1j71wujkd::::res://Sources/fonts/Tektur-VariableFont_wdth,wght.ttf
 full_screen.tscn::PackedScene/PackedScene::3029302594333010707::1748562289::0::1::::<><><>0<>0<><>::uid://1w7xvaqy2bil::::res://Sources/images/sl_0210121_40570_43.jpg<>uid://ekjja8dygmip::::res://scenes/DiceRoller.tscn<>uid://bx8qee3jenixy::::res://scenes/main_creation.tscn
 main_creation.tscn::PackedScene/PackedScene::4069867422074410894::1748562289::0::1::::<><><>0<>0<><>::uid://boqlp7gk60ji7::::res://Sources/images/background_600.jpg<>uid://bbm7h42ymm83g::::res://Sources/GUI_files/DiceRoller.tres
 ::res://scripts/::1748445356
 dice_roller.gd::GDScript/GDScript::997059503706462822::1747871436::0::1::::<>Panel<><>0<>0<><>::
 ::res://Sources/::1748565696
-default_env.tres::Environment::31547875767067079::1748565240::0::1::::<><><>0<>0<><>::
+default_env.tres::Environment/Environment::31547875767067079::1748565240::0::1::::<><><>0<>0<><>::
 mainTheme.tres::Theme/Theme::3026384676666447965::1747838227::0::1::::<><><>0<>0<><>::uid://2fpyab628rt6::::res://Sources/fonts/PlayfairDisplaySC-Black.ttf<>res://Sources/GUI_files/BG_styleboxflat.tres
 ::res://Sources/fonts/::1747767678
 Audiowide-Regular.ttf::FontFile/FontFile::7937134725149694040::1725491480::1747767678::1::::<><><>0<>0<>e46df963bc89e19c04c21428bcd635e5<>res://.godot/imported/Audiowide-Regular.ttf-50e301be9d50f6ba26133f8df0785548.fontdata::
@@ -23,7 +23,7 @@ ShareTech-Regular.ttf::FontFile/FontFile::2235147519332146061::1725491480::17477
 Tektur-VariableFont_wdth,wght.ttf::FontFile/FontFile::440123717568268219::1725491480::1747767678::1::::<><><>0<>0<>ab4bc7ac312cbfcafac3b1eb9d1a76ac<>res://.godot/imported/Tektur-VariableFont_wdth,wght.ttf-9f9f48f431be21fcaac546776e364cf3.fontdata::
 ::res://Sources/GUI_files/::1748565240
 BG_styleboxflat.tres::StyleBoxFlat/StyleBoxFlat::-1::1747767648::0::1::::<><><>0<>0<><>::
-DiceRoller.tres::Theme::2483339070699582242::1748565240::0::1::::<><><>0<>0<><>::uid://63ys2mon51xx::::res://Sources/fonts/ShareTech-Regular.ttf
+DiceRoller.tres::Theme/Theme::2483339070699582242::1748565240::0::1::::<><><>0<>0<><>::uid://63ys2mon51xx::::res://Sources/fonts/ShareTech-Regular.ttf
 ::res://Sources/images/::1748446628
 background_600.jpg::CompressedTexture2D/CompressedTexture2D::3402790903032320460::1747836482::1747838180::1::::<><><>0<>0<>01d33889ec3d194aac7f7c0ecdbaef95<>res://.godot/imported/background_600.jpg-3eb617c0b8d053b9f683ac5cfe917a13.ctex::
 sl_0210121_40570_43.jpg::CompressedTexture2D/CompressedTexture2D::1872311365956951031::1649763654::1748446628::1::::<><><>0<>0<>db62d6d251e5e6fd82b210fcb6de6c49<>res://.godot/imported/sl_0210121_40570_43.jpg-7a58c2f7841642a98bfad4ff789c2391.ctex::
