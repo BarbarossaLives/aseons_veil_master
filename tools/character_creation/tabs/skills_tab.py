@@ -36,14 +36,19 @@ def build_skills_tab(notebook, state):
             var.set(var.get() - 1)
             update_remaining_points()
 
-    # Populate skills
-    for row, (skill, details) in enumerate(skill_data.items()):
+    # Properly aligned two-column layout
+    columns = 2
+    for index, (skill, details) in enumerate(skill_data.items()):
         state["skills"][skill] = ttk.IntVar(value=0)
 
-        ttk.Label(skill_frame, text=skill).grid(row=row, column=0, sticky="w", padx=5)
-        ttk.Button(skill_frame, text="-", width=3, command=lambda s=skill: remove_point(s)).grid(row=row, column=1)
-        ttk.Label(skill_frame, textvariable=state["skills"][skill]).grid(row=row, column=2)
-        ttk.Button(skill_frame, text="+", width=3, command=lambda s=skill: add_point(s)).grid(row=row, column=3)
+        col_offset = (index % columns) * 4  # 4 columns per skill block
+        row = index // columns
+
+        ttk.Label(skill_frame, text=skill).grid(row=row, column=col_offset, sticky="w", padx=(30, 15))
+        ttk.Button(skill_frame, text="-", width=3, command=lambda s=skill: remove_point(s)).grid(row=row, column=col_offset + 1)
+        ttk.Label(skill_frame, textvariable=state["skills"][skill], width=2, anchor="center").grid(row=row, column=col_offset + 2)
+        ttk.Button(skill_frame, text="+", width=3, command=lambda s=skill: add_point(s)).grid(row=row, column=col_offset + 3)
+
 
     # Display remaining points
     footer = ttk.Frame(tab)

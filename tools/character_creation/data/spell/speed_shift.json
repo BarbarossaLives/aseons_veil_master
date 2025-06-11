@@ -1,0 +1,7 @@
+{
+  "name": "Speed Shift",
+  "school": "Arcane",
+  "defense": "Might",
+  "difficulty": "8",
+  "description": "Choose if the target moves faster or\nslower than usual. The degree of speed\nalteration is determined by the spell's\nbonus power.\nIf the target moves faster, they can act\nmultiple times per round, equal to the\nspell's bonus power. Conversely, targets\nmoving slower only act once per number\nof rounds equal to the spell's power."
+}

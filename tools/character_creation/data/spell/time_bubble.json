@@ -1,0 +1,7 @@
+{
+  "name": "Time Bubble",
+  "school": "Arxcane",
+  "defense": "Agility",
+  "difficulty": "9",
+  "description": "Choose if the bubble increases or\ndecreases time. All beings within the\nAoE move FP times as fast or slow. All\neffected may take actions equally as many\ntimes per round.\nBeings may move in and out of the\nbubble depending on their proximity to\nthe AoE's outer edge."
+}

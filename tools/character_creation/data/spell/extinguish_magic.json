@@ -1,0 +1,7 @@
+{
+  "name": "Extinguish Magic",
+  "school": "Arcane",
+  "defense": "Wit",
+  "difficulty": "8",
+  "description": "Unless the original spell was cast with\nmore FP than you expended, spells of\nnon-instantaneous duration within\nrange promptly end.\nAdditional FP may be incrementally\nexpended until the spell is extinguished."
+}

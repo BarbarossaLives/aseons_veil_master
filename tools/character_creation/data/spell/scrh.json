@@ -1,0 +1,7 @@
+{
+  "name": "Scrh",
+  "school": "Arcane",
+  "defense": "Instinct",
+  "difficulty": "8",
+  "description": "Use a reflective surface to reveal a vision.\nFixate on an AoE within range, expend-\ning spell power based on how familiar\nthe target is.\nExpend separate FP for both the physical\nand temporal (current or past only) range.\nTarget's with Instinct \u2265 3 can roll to feel\nthat they are being watched."
+}

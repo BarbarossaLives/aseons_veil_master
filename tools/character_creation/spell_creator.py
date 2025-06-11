@@ -5,10 +5,6 @@ import os, json
 from spell_class import Spell
 
 
-#HelperFunction
-def parse_list_input(text: str) -> list:
-    return [item.strip() for item in text.split(",") if item.strip()]
-
 
 # Setup paths
 BASE_DIR = os.path.dirname(__file__)
@@ -16,32 +12,20 @@ SPELL_FOLDER = os.path.join(BASE_DIR, "data", "spell")
 os.makedirs(SPELL_FOLDER, exist_ok=True)
 
 # Save function
-def save_armor():
+def save_spell():
     name = name_entry.get()
-    tags = parse_list_input(tags_entry.get())
+    school = school_entry.get()
+    defense = defense_entry.get()
+    difficulty = difficulty_entry.get()
     description = description_entry.get()
-    fp_cost = int(fp_cost.get())
-    area = area_entry.get()
-    duration = duration_entry.get()
-    range = range_entry.get()
-    concentration= concentration_entry.get()
 
 
-
-    if not name:
-        messagebox.showerror("Missing Name", "Please enter a name for the armor.")
-        return
-
-    armor = Armor(
+    spell = Spell(
         name=name,
-        tags=tags,
+        school=school,
+        defense=defense,
+        difficulty=difficulty,
         description=description,
-        fp_cost=fp_cost,
-        area=area,
-        duration=duration,
-        range=range,
-        concentration=concentration
-
     )
 
     filename = f"{name.lower().replace(' ', '_')}.json"
@@ -50,16 +34,16 @@ def save_armor():
     with open(path, "w") as f:
         json.dump(spell.to_dict(), f, indent=2) 
 
-    messagebox.showinfo("Saved", f"{armor.name} saved to {filename}")
+    messagebox.showinfo("Saved", f"{spell.name} saved to {filename}")
 
     # Clear fields for the next entry
-    for entry in (name_entry, tags_entry, fp_cost_entry, area_entry, duration_entry, concentration_entry, description_entry):
+    for entry in (name_entry, school_entry, defense_entry, difficulty_entry, description_entry):
         entry.delete(0, 'end')
     name_entry.focus()
 
 
 # Create window
-app = ttk.Window(title="Spell Creator", themename="darkly", size=(600, 850))
+app = ttk.Window(title="Spell Creator", themename="darkly", size=(600, 950))
 
 style = ttk.Style()
 style.configure(
@@ -85,11 +69,28 @@ name_entry = ttk.Entry(app)
 name_entry.pack(pady=5)
 
 # Tage
-ttk.Label(app, text="Tags: (coma-seperated)", style = "info.TLabel").pack()
-tags_entry = ttk.Entry(app)
-tags_entry.pack(pady=5)
+ttk.Label(app, text="School:", style = "info.TLabel").pack()
+school_entry = ttk.Entry(app)
+school_entry.pack(pady=5)
 
-# FPcost
-ttk.Label(app, text="Focus Point Coast:", style = "info.TLabel").pack()
-fp_cost_entry = ttk.Entry(app)
-fp_cost_entry.pack(pady=5)
+# Defense
+ttk.Label(app, text="Defense", style="info.TLabel").pack()
+defense_entry = ttk.Entry(app)
+defense_entry.pack(pady=5)
+
+# Difficulty
+ttk.Label(app, text="Difficulty", style="info.TLabel").pack()
+difficulty_entry = ttk.Entry(app)
+difficulty_entry.pack(pady=5)
+
+
+# Description
+ttk.Label(app, text="Description:", style="info.TLabel").pack()
+description_entry = ttk.Entry(app)
+description_entry.pack(pady=5)
+
+
+#Save Button
+ttk.Button(app, text="Save Spell", command=save_spell, style="success").pack(pady=15)
+
+app.mainloop()

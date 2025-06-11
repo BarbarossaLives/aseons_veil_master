@@ -1,0 +1,12 @@
+{
+  "name": "Missile",
+  "type": [
+    "Combat"
+  ],
+  "pips": [
+    "Combat"
+  ],
+  "roll": [
+    "Combat"
+  ]
+}

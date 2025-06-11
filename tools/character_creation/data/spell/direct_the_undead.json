@@ -1,0 +1,7 @@
+{
+  "name": "Direct The Undead",
+  "school": "Divine",
+  "defense": "Agility",
+  "difficulty": "7",
+  "description": "Undead within the AoE obey a one-word\ncommand. The base duration is until\nyour next turn. Expend an FP to give\nthem a new command word."
+}

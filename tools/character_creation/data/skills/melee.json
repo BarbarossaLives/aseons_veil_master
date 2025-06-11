@@ -1,0 +1,12 @@
+{
+  "name": "Melee",
+  "type": [
+    "Combat"
+  ],
+  "pips": [
+    "Combat"
+  ],
+  "roll": [
+    "Combat"
+  ]
+}

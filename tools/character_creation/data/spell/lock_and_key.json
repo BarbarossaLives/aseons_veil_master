@@ -1,0 +1,7 @@
+{
+  "name": "Lock and Key",
+  "school": "Arcane",
+  "defense": "Wit",
+  "difficulty": "7",
+  "description": "Lock: Magically lock a door or object\nthat is capable of being locked. The\ntarget may only be opened by means of\ndestruction or magic.\nFP expended determines lock strength.\nKey: Opens a door or object that is\ncapable of being locked or barred.\nIf magically locked, FP expended deter-\nmines the duration it remains unlocked:\n\u2022 FP \u2264 lock strength: Wit rounds\n\u2022 FP > lock strength: permanent"
+}

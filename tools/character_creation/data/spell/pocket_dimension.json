@@ -1,0 +1,7 @@
+{
+  "name": "Pocket Dimension",
+  "school": "Arcane",
+  "defense": "Agility",
+  "difficulty": "10",
+  "description": "You create an empty dimensional space\nthe size of the spell's physical range with\na temporary door.\nThe dimension is permanent as long\nas FP is exclusively dedicated to its\nexistence.\nAfter creation, the pocket dimension can\nbe accessed by conjuring the temporary\ndoor for 1 FP."
+}
